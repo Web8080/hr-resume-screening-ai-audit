@@ -1,0 +1,107 @@
+{
+  "n": 4000,
+  "current": {
+    "gender": {
+      "selection_rate": {
+        "Female": 23.9,
+        "Male": 26.2
+      },
+      "impact_ratio": {
+        "Female": 0.91,
+        "Male": 1.0
+      },
+      "qualified_selection_rate": {
+        "Female": 63.8,
+        "Male": 73.9
+      }
+    },
+    "ethnicity": {
+      "selection_rate": {
+        "Asian": 24.1,
+        "Black": 26.8,
+        "Hispanic": 22.8,
+        "White": 25.5
+      },
+      "impact_ratio": {
+        "Asian": 0.9,
+        "Black": 1.0,
+        "Hispanic": 0.85,
+        "White": 0.95
+      },
+      "qualified_selection_rate": {
+        "Asian": 64.6,
+        "Black": 69.1,
+        "Hispanic": 67.5,
+        "White": 69.8
+      }
+    },
+    "age": {
+      "selection_rate": {
+        "40 plus": 15.9,
+        "Under 40": 30.1
+      },
+      "impact_ratio": {
+        "40 plus": 0.53,
+        "Under 40": 1.0
+      },
+      "qualified_selection_rate": {
+        "40 plus": 48.8,
+        "Under 40": 79.9
+      }
+    }
+  },
+  "remediated": {
+    "gender": {
+      "selection_rate": {
+        "Female": 25.0,
+        "Male": 25.0
+      },
+      "impact_ratio": {
+        "Female": 1.0,
+        "Male": 1.0
+      },
+      "qualified_selection_rate": {
+        "Female": 80.1,
+        "Male": 84.0
+      }
+    },
+    "ethnicity": {
+      "selection_rate": {
+        "Asian": 26.4,
+        "Black": 26.5,
+        "Hispanic": 24.1,
+        "White": 24.6
+      },
+      "impact_ratio": {
+        "Asian": 1.0,
+        "Black": 1.0,
+        "Hispanic": 0.91,
+        "White": 0.93
+      },
+      "qualified_selection_rate": {
+        "Asian": 84.4,
+        "Black": 82.5,
+        "Hispanic": 84.0,
+        "White": 80.7
+      }
+    },
+    "age": {
+      "selection_rate": {
+        "40 plus": 24.9,
+        "Under 40": 25.1
+      },
+      "impact_ratio": {
+        "40 plus": 0.99,
+        "Under 40": 1.0
+      },
+      "qualified_selection_rate": {
+        "40 plus": 80.4,
+        "Under 40": 82.9
+      }
+    }
+  },
+  "proxy": {
+    "mean_gap_years_female": 0.63,
+    "mean_gap_years_male": 0.34
+  }
+}

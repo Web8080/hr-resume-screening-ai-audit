@@ -1,0 +1,278 @@
+{
+ "n": 4000,
+ "top_share": 0.25,
+ "single": {
+  "gender": [
+   {
+    "group": "Female",
+    "n": 2023,
+    "selected": 484,
+    "rate": 23.9,
+    "ratio": 0.915,
+    "p": 0.10825356674858061,
+    "reference": false,
+    "ci95": [
+     0.822,
+     1.019
+    ]
+   },
+   {
+    "group": "Male",
+    "n": 1977,
+    "selected": 517,
+    "rate": 26.2,
+    "ratio": 1.0,
+    "p": 1.0,
+    "reference": true
+   }
+  ],
+  "ethnicity": [
+   {
+    "group": "Asian",
+    "n": 469,
+    "selected": 113,
+    "rate": 24.1,
+    "ratio": 0.898,
+    "p": 0.3242380158730659,
+    "reference": false,
+    "ci95": [
+     0.719,
+     1.109
+    ]
+   },
+   {
+    "group": "Black",
+    "n": 604,
+    "selected": 162,
+    "rate": 26.8,
+    "ratio": 1.0,
+    "p": 1.0,
+    "reference": true
+   },
+   {
+    "group": "Hispanic",
+    "n": 738,
+    "selected": 168,
+    "rate": 22.8,
+    "ratio": 0.849,
+    "p": 0.09754225945013148,
+    "reference": false,
+    "ci95": [
+     0.698,
+     1.026
+    ]
+   },
+   {
+    "group": "White",
+    "n": 2189,
+    "selected": 558,
+    "rate": 25.5,
+    "ratio": 0.95,
+    "p": 0.5284168112671579,
+    "reference": false,
+    "ci95": [
+     0.819,
+     1.104
+    ]
+   }
+  ],
+  "age_band": [
+   {
+    "group": "40 plus",
+    "n": 1431,
+    "selected": 228,
+    "rate": 15.9,
+    "ratio": 0.53,
+    "p": 3.515643981210658e-24,
+    "reference": false,
+    "ci95": [
+     0.46,
+     0.602
+    ]
+   },
+   {
+    "group": "Under 40",
+    "n": 2569,
+    "selected": 773,
+    "rate": 30.1,
+    "ratio": 1.0,
+    "p": 1.0,
+    "reference": true
+   }
+  ]
+ },
+ "ci": {},
+ "intersectional": [
+  {
+   "group": "Female / 40 plus",
+   "n": 723,
+   "selected": 104,
+   "rate": 14.4,
+   "ratio": 0.464,
+   "p": 2.735728433823078e-17,
+   "reference": false
+  },
+  {
+   "group": "Female / Under 40",
+   "n": 1300,
+   "selected": 380,
+   "rate": 29.2,
+   "ratio": 0.944,
+   "p": 0.34412646390634327,
+   "reference": false
+  },
+  {
+   "group": "Male / 40 plus",
+   "n": 708,
+   "selected": 124,
+   "rate": 17.5,
+   "ratio": 0.566,
+   "p": 3.0575412541765187e-11,
+   "reference": false
+  },
+  {
+   "group": "Male / Under 40",
+   "n": 1269,
+   "selected": 393,
+   "rate": 31.0,
+   "ratio": 1.0,
+   "p": 1.0,
+   "reference": true
+  }
+ ],
+ "ablation": [
+  {
+   "variant": "Current model (all components)",
+   "age_ratio": 0.53,
+   "gender_ratio": 0.915,
+   "ethnicity_ratio": 0.849,
+   "precision_qualified": 83.7
+  },
+  {
+   "variant": "Remove school tier",
+   "age_ratio": 0.527,
+   "gender_ratio": 0.862,
+   "ethnicity_ratio": 0.903,
+   "precision_qualified": 88.2
+  },
+  {
+   "variant": "Remove career gap",
+   "age_ratio": 0.516,
+   "gender_ratio": 0.985,
+   "ethnicity_ratio": 0.831,
+   "precision_qualified": 85.7
+  },
+  {
+   "variant": "Remove age",
+   "age_ratio": 0.962,
+   "gender_ratio": 0.919,
+   "ethnicity_ratio": 0.856,
+   "precision_qualified": 84.2
+  },
+  {
+   "variant": "Skill only (job-relevant signal)",
+   "age_ratio": 0.991,
+   "gender_ratio": 0.999,
+   "ethnicity_ratio": 0.911,
+   "precision_qualified": 100.0
+  }
+ ],
+ "proxy": {
+  "gap_by_gender": {
+   "female": 0.63,
+   "male": 0.34,
+   "mann_whitney_p": 1.1140308360482761e-46
+  },
+  "tier_by_ethnicity": {
+   "chi2": 99.7,
+   "p": 2.9663704752463583e-19,
+   "cramers_v": 0.112
+  },
+  "age_in_score": "direct: age is an input to the score formula (age penalty)"
+ },
+ "validity": {
+  "spearman_score_vs_skill": 0.866,
+  "precision_current": 83.7,
+  "precision_skill_only": 100.0
+ },
+ "equal_opportunity": {
+  "gender": [
+   {
+    "group": "Female",
+    "n": 632,
+    "selected": 403,
+    "rate": 63.8,
+    "ratio": 0.863,
+    "p": 0.00016390926326983853,
+    "reference": false
+   },
+   {
+    "group": "Male",
+    "n": 589,
+    "selected": 435,
+    "rate": 73.9,
+    "ratio": 1.0,
+    "p": 1.0,
+    "reference": true
+   }
+  ],
+  "ethnicity": [
+   {
+    "group": "Asian",
+    "n": 147,
+    "selected": 95,
+    "rate": 64.6,
+    "ratio": 0.926,
+    "p": 0.23830596055837222,
+    "reference": false
+   },
+   {
+    "group": "Black",
+    "n": 194,
+    "selected": 134,
+    "rate": 69.1,
+    "ratio": 0.99,
+    "p": 0.8595698062270167,
+    "reference": false
+   },
+   {
+    "group": "Hispanic",
+    "n": 212,
+    "selected": 143,
+    "rate": 67.5,
+    "ratio": 0.967,
+    "p": 0.550343583925781,
+    "reference": false
+   },
+   {
+    "group": "White",
+    "n": 668,
+    "selected": 466,
+    "rate": 69.8,
+    "ratio": 1.0,
+    "p": 1.0,
+    "reference": true
+   }
+  ],
+  "age_band": [
+   {
+    "group": "40 plus",
+    "n": 443,
+    "selected": 216,
+    "rate": 48.8,
+    "ratio": 0.61,
+    "p": 6.24921046403156e-29,
+    "reference": false
+   },
+   {
+    "group": "Under 40",
+    "n": 778,
+    "selected": 622,
+    "rate": 79.9,
+    "ratio": 1.0,
+    "p": 1.0,
+    "reference": true
+   }
+  ]
+ }
+}
